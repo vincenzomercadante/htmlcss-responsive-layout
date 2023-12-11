@@ -200,6 +200,31 @@ section:nth-child(even){
     width: 20%;
 }
 
+/* ! get started */
+#get-started{
+    padding: 3rem 0;
+}
+
+#get-started .container{
+    text-align: center;
+    
+    /* debug */
+    min-height: 400px;
+    background-color: var(--card-demo-bg);
+}
+
+/* ! footer */
+#footer{
+    padding: 3rem 0;
+    background-color: #333333;
+}
+
+#footer .container{
+    
+    /* debug */
+    background-color: var(--main-color);
+    min-height: 100px;
+}
 
 /* ! Tablet view */
 @media screen and (max-width: 768px){
