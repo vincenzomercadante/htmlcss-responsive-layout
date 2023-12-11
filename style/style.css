@@ -55,6 +55,9 @@ body{
 }
 
 /* ! main */
+section:nth-child(even){
+    background-color: var(--main-color);
+}
 
 /* ! demo section */
 #demo{
@@ -92,7 +95,6 @@ body{
 
 /* ! planning section */
 #planning{
-    background-color: var(--main-color);
     padding: 3rem 0;
 }
 
@@ -109,13 +111,13 @@ body{
     padding: 20px;
 }
 
-#planning .container > .strategic-container{
+#planning .container > .strategic-col{
     /* debug */
     border: 1px dashed black;
     min-height: 700px;
 }
 
-#planning .container > .app-container{
+#planning .container > .app-col{
     align-self: flex-end;
     border-radius: 50px;
     background-color: white;
@@ -123,6 +125,35 @@ body{
     /* debug */
     min-height: 500px;
 }
+
+/* ! testimonials */
+#testimonials{
+    padding: 3rem 0;
+}
+
+.testimonials-introduction{
+    text-align: center;
+
+    /* debug */
+    border-bottom: 2px dotted black;
+    min-height: 200px;
+}
+
+#testimonials .card{
+    margin: 2rem 0;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    /* debug */
+    min-height: 300px;
+}
+
+#testimonials .card .img-col{
+    width: 30%;
+}
+
 
 
 /* ! Tablet view */
@@ -150,6 +181,10 @@ body{
 @media screen and (max-width: 480px){
     #demo .col,
     #demo .col:first-child {
+        width: 100%;
+    }
+
+    #testimonials .card .img-col{
         width: 100%;
     }
 }
