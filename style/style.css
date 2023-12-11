@@ -28,6 +28,8 @@ body{
 .row{
     margin-left: -10px;
     margin-right: -10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .col{
@@ -63,11 +65,6 @@ section:nth-child(even){
 #demo{
     padding-top: 2rem;
     padding-bottom: 5rem;
-}
-
-#demo .row{
-    display: flex;
-    flex-wrap: wrap;
 }
 
 #demo .col:first-child {
@@ -154,6 +151,24 @@ section:nth-child(even){
     width: 30%;
 }
 
+/*  ! with-us */
+#with-us{
+    padding: 3rem 0;
+}
+
+#with-us .with-us-title{
+    text-align: center;
+    line-height: 3rem;
+}
+
+#with-us .col .card{ 
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+
+    /* debug */
+    min-height: 300px;
+}
 
 
 /* ! Tablet view */
@@ -175,6 +190,10 @@ section:nth-child(even){
         margin-bottom: 1rem;
     }
 
+    #with-us .col{
+        width: 50%;
+    }
+
 }
 
 /* ! Mobile view */
@@ -185,6 +204,10 @@ section:nth-child(even){
     }
 
     #testimonials .card .img-col{
+        width: 100%;
+    }
+
+    #with-us .col{
         width: 100%;
     }
 }
