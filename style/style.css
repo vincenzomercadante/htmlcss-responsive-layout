@@ -161,6 +161,10 @@ section:nth-child(even){
     line-height: 3rem;
 }
 
+#with-us .row{
+    margin-top: 70px;
+}
+
 #with-us .col .card{ 
     background-color: white;
     border-radius: 20px;
@@ -168,6 +172,30 @@ section:nth-child(even){
 
     /* debug */
     min-height: 300px;
+}
+
+/* ! about-us */
+#about-us{
+    padding: 3rem 0;
+}
+
+#about-us .container{
+    display: flex;
+    gap: var(--base-space);
+}
+
+#about-us .container > *{
+    background-color: var(--main-color);
+    /* debug */
+    min-height: 600px;
+}
+
+.about-us-text{
+    width: 80%;
+}
+
+.about-us-img{
+    width: 20%;
 }
 
 
