@@ -87,11 +87,45 @@ body{
     background-color: var(--card-demo-bg);
 
     /* debug */
-    min-height: 300px;
+    min-height: 350px;
+}
+
+/* ! planning section */
+#planning{
+    background-color: var(--main-color);
+    padding: 3rem 0;
+}
+
+#planning .container{
+    max-width: 900px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#planning .container > *{
+    width: calc(50% - 20px);
+    padding: 20px;
+}
+
+#planning .container > .strategic-container{
+    /* debug */
+    border: 1px dashed black;
+    min-height: 700px;
+}
+
+#planning .container > .app-container{
+    align-self: flex-end;
+    border-radius: 50px;
+    background-color: white;
+
+    /* debug */
+    min-height: 500px;
 }
 
 
-
+/* ! Tablet view */
 @media screen and (max-width: 768px){
     .container{
         margin-left: 15px;
@@ -101,8 +135,18 @@ body{
     #demo .col:first-child .card>*{
         width: 100%;
     }
+
+    #planning .container > *{
+        width: 100%;
+    }
+
+    .strategic-container{
+        margin-bottom: 1rem;
+    }
+
 }
 
+/* ! Mobile view */
 @media screen and (max-width: 480px){
     #demo .col,
     #demo .col:first-child {
