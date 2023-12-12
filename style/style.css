@@ -420,6 +420,7 @@ section:nth-child(even){
 
 .about-us-img .img-rounded{
     height: 250px;
+    margin: 0 auto;
 }
 
 #about-us .fa-quote-left{
@@ -550,6 +551,10 @@ h1{
     }
 
     /* ! about-us */
+    #about-us .text-container p{
+        padding-right: 1rem;
+    }
+
 }
 
 /* ! Mobile view */
@@ -599,6 +604,10 @@ h1{
 
     #about-us .text-container p{
         padding-right: 0rem;
+    }
+
+    #about-us .fa-quote-left{
+        right: 2rem;
     }
 
 }
