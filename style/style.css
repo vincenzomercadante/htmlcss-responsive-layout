@@ -5,6 +5,7 @@
     --demo-text-color: #596d7e;
     --txt-with-us: #737373;
     --txt-about-us: #111111;
+    --title-pg-color: #fdc15f;
     --base-space: 10px;
 }
 
@@ -448,10 +449,29 @@ section:nth-child(even){
 
 #get-started .container{
     text-align: center;
-    
-    /* debug */
-    min-height: 400px;
-    background-color: var(--card-demo-bg);
+    color: white;
+}
+
+#get-started .container > *{
+    margin-top: 2rem;
+}
+
+h1{
+    font-size: 6rem;
+    color: #fdc15f;
+}
+
+#get-started .btn{
+    padding: 2rem 5rem;
+    font-size: 1.5rem;
+    border-radius: 40px;
+    background-color: white;
+    color: var(--main-color);
+}
+
+.author-info a{
+    margin-left: 5px;
+    text-decoration: underline;
 }
 
 /* ! footer */
