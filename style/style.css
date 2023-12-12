@@ -47,6 +47,10 @@ a{
     color: inherit;
 }
 
+section{
+    padding: 3rem 0;
+}
+
 .btn{
     padding: 10px 15px;
     border-radius: 20px;
@@ -55,6 +59,10 @@ a{
 img{
     display: block;
     width: 100%;
+}
+
+p{
+    line-height: 2rem;
 }
 
 /* ! HEADER */
@@ -187,13 +195,9 @@ section:nth-child(even){
 }
 
 /* ! planning section */
-#planning{
-    padding: 3rem 0;
-}
-
 #planning .container{
     max-width: 900px;
-    padding: 15px;
+    padding: 3rem 1rem;
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
@@ -202,21 +206,64 @@ section:nth-child(even){
 
 #planning .container > *{
     width: calc(50% - 20px);
-    padding: 20px;
 }
 
 #planning .container > .strategic-col{
-    /* debug */
-    border: 1px dashed black;
-    min-height: 700px;
+    color: white;
 }
 
 #planning .container > .app-col{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 50px;
+    text-align: center;
+    color: black;
     background-color: white;
-
     /* debug */
     min-height: 500px;
+}
+
+.app-col > *{
+    margin-bottom: 1rem;
+}
+
+.strategic-col .img-container{
+    margin-bottom: 150px;
+}
+
+.strategic-col .text-container{
+    padding-right: 2rem;
+}
+
+.strategic-col .text-container .section-title{
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.app-col .section-title{
+
+}
+
+.app-col img{
+    width: 70%;
+}
+
+.app-col p{
+    font-style: italic;
+}
+
+#planning .arrow{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    line-height: 40px;
+    background-color: var(--main-color);
 }
 
 /* ! testimonials */
@@ -362,6 +409,10 @@ section:nth-child(even){
 
     .strategic-container{
         margin-bottom: 1rem;
+    }
+
+    .strategic-col .text-container .section-title{
+        font-size: 3rem;
     }
 
     /* ! with-us */
