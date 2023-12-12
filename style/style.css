@@ -448,6 +448,7 @@ section:nth-child(even){
 }
 
 #get-started .container{
+    max-width: 700px;
     text-align: center;
     color: white;
 }
@@ -481,11 +482,20 @@ h1{
 }
 
 #footer .container{
-    
-    /* debug */
-    background-color: var(--main-color);
-    min-height: 100px;
+    max-width: 700px;
+    text-align: center;
+    color: white;
 }
+
+.footer-text:first-child{
+    margin-bottom: 3rem;
+}
+
+.footer-text a{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
 
 /* ! Tablet view */
 @media screen and (max-width: 768px){
@@ -540,14 +550,6 @@ h1{
     }
 
     /* ! about-us */
-    #about-us .text-container p{
-        padding-right: 0;
-    }
-
-    #about-us .fa-quote-left{
-        font-size: 3rem;
-
-    }
 }
 
 /* ! Mobile view */
@@ -594,4 +596,9 @@ h1{
     #about-us .container > *{
         width: 100%;
     }
+
+    #about-us .text-container p{
+        padding-right: 0rem;
+    }
+
 }
