@@ -42,9 +42,19 @@ ul{
 }
 
 a{
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: inherit;
+}
+
+.btn{
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+img{
+    display: block;
+    width: 100%;
 }
 
 /* ! HEADER */
@@ -76,9 +86,7 @@ a{
 }
 
 .nav-list .btn{
-    padding: 10px 15px;
     background-color: white;
-    border-radius: 20px;
     color: black;
 }
 
@@ -106,20 +114,76 @@ section:nth-child(even){
 #demo .col:first-child .card{
     display: flex;
     flex-wrap: wrap;
-    
-}
-
-#demo .col:first-child .card>*{
-    width: 50%;
+    gap: 20px;
+    position: relative;
 }
 
 #demo .card{
-    padding: 20px;
     border-radius: 20px;
     background-color: var(--card-demo-bg);
-
+    color: var(--demo-text-color);
+    height: 100%;
     /* debug */
     min-height: 350px;
+}
+
+#demo .col:first-child .card >*{
+    width: calc(50% - 10px);
+}
+
+
+#demo .card .card-title{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.demo-text{
+    padding: 2rem 0 2rem 2rem;
+    width: calc(50% - 20px);
+}
+
+#demo .card .card-text{
+    margin-top: 2rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+.demo-text .btn{
+    margin: 2rem 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1.2rem;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.demo-img{
+    position: relative;
+    left: 2rem;
+}
+
+.demo-img img{
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+}
+
+#demo .card.small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+#demo .card.small .fa-solid{
+    font-size: 5rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+#demo .card.small{
+    text-align: center;
 }
 
 /* ! planning section */
@@ -279,6 +343,18 @@ section:nth-child(even){
         width: 100%;
     }
 
+    .demo-img{
+        left: 0;
+    }
+
+    .demo-img img{
+        position: static;
+    }
+
+    .demo-text{
+        padding-right: 2rem;
+    }
+
     /* !planning */
     #planning .container > *{
         width: 100%;
@@ -305,6 +381,18 @@ section:nth-child(even){
     #demo .col,
     #demo .col:first-child {
         width: 100%;
+    }
+
+    .demo-text{
+        text-align: center;
+    }
+
+    #demo .btn{
+        width: 80%;
+    }
+
+    .demo-img img{
+        margin: 0 auto;
     }
 
     #testimonials .card .img-col{
