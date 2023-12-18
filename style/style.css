@@ -85,7 +85,6 @@ p{
 .img-rounded{
     overflow: hidden;
     border-radius: 50%;
-    height: 200px;
     aspect-ratio: 1;
     line-height: 200px;
     object-fit: cover;
@@ -319,8 +318,11 @@ section:nth-child(even){
     min-height: 300px;
 }
 
+#testimonials .img-rounded{
+    width: 30%;
+}
+
 #testimonials .img-rounded img{
-    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -582,6 +584,10 @@ h1{
         text-align: center;
         gap: 1rem;
         flex-wrap: wrap;
+    }
+
+    #testimonials .img-rounded{
+        width: 100%;
     }
 
     #testimonials .text-col{
